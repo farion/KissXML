@@ -19,7 +19,6 @@ Pod::Spec.new do |s|
   s.subspec 'Standard' do |ss|
     ss.dependency 'KissXML/Core'
     ss.xcconfig     = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2',
-                        'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
                         'OTHER_CFLAGS' => "$(inherited) -DDDXML_LIBXML_MODULE_ENABLED=0"}
   end
 
